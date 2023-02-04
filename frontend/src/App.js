@@ -44,7 +44,9 @@ function App() {
       <div className="dropdown">
         <DropdownList selectHandler={selectHandler} />
       </div>
-      {name.length === 0 && <h4>Please select a customer</h4>}
+      {name.length === 0 && (
+        <h4 className="initial">Please select a customer</h4>
+      )}
       {name.length !== 0 && (
         <>
           <div className="text-container">
